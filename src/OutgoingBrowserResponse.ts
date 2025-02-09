@@ -25,7 +25,7 @@ export class OutgoingBrowserResponse extends OutgoingResponse {
    * @param options - Options for the outgoing browser response.
    */
   constructor (options: OutgoingBrowserResponseOptions) {
-    super({ ...options, type: OutgoingBrowserResponse.OUTGOING_BROWSER_RESPONSE })
+    super({ statusCode: 200, ...options, type: OutgoingBrowserResponse.OUTGOING_BROWSER_RESPONSE })
   }
 
   /**

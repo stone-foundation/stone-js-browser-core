@@ -6,7 +6,7 @@
 
 # Interface: IRoute
 
-Defined in: [declarations.ts:9](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/declarations.ts#L9)
+Defined in: [browser-core/src/declarations.ts:9](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L9)
 
 Represents a route.
 
@@ -16,7 +16,7 @@ Represents a route.
 
 > **getParam**: \<`TReturn`\>(`name`, `fallback`?) => `undefined` \| `TReturn`
 
-Defined in: [declarations.ts:11](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/declarations.ts#L11)
+Defined in: [browser-core/src/declarations.ts:11](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L11)
 
 #### Type Parameters
 
@@ -42,4 +42,4 @@ Defined in: [declarations.ts:11](https://github.com/stonemjs/browser-core/blob/2
 
 > **params**: `Record`\<`string`, `unknown`\>
 
-Defined in: [declarations.ts:10](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/declarations.ts#L10)
+Defined in: [browser-core/src/declarations.ts:10](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L10)

@@ -48,7 +48,7 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "@stone-js/core": "^0.0.4"
+    "@stone-js/core": "file:/Users/evenspierre/Projects/StoneJS/core"
   },
   "dependencies": {
     "cookie": "^1.0.2"

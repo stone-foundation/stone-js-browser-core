@@ -10,5 +10,5 @@
 - [cookies/CookieCollection](cookies/CookieCollection/README.md)
 - [declarations](declarations/README.md)
 - [errors/BrowserError](errors/BrowserError/README.md)
-- [events/IncomingBrowserEvent](events/IncomingBrowserEvent/README.md)
-- [events/OutgoingBrowserResponse](events/OutgoingBrowserResponse/README.md)
+- [IncomingBrowserEvent](IncomingBrowserEvent/README.md)
+- [OutgoingBrowserResponse](OutgoingBrowserResponse/README.md)

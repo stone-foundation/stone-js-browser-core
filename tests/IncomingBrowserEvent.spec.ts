@@ -1,6 +1,6 @@
-import { BrowserError } from '../../src/errors/BrowserError'
-import { CookieCollection } from '../../src/cookies/CookieCollection'
-import { IncomingBrowserEvent, IncomingBrowserEventOptions } from '../../src/events/IncomingBrowserEvent'
+import { BrowserError } from '../src/errors/BrowserError'
+import { CookieCollection } from '../src/cookies/CookieCollection'
+import { IncomingBrowserEvent, IncomingBrowserEventOptions } from '../src/IncomingBrowserEvent'
 
 // Mock options for IncomingBrowserEvent
 const mockOptions: IncomingBrowserEventOptions = {
