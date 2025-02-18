@@ -12,3 +12,4 @@
 - [errors/BrowserError](errors/BrowserError/README.md)
 - [IncomingBrowserEvent](IncomingBrowserEvent/README.md)
 - [OutgoingBrowserResponse](OutgoingBrowserResponse/README.md)
+- [RedirectBrowserResponse](RedirectBrowserResponse/README.md)

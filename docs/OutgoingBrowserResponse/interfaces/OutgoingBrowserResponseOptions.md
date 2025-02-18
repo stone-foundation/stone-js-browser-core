@@ -6,13 +6,17 @@
 
 # Interface: OutgoingBrowserResponseOptions
 
-Defined in: browser-core/src/OutgoingBrowserResponse.ts:6
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:6](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L6)
 
 Options for creating an Outgoing Browser Response.
 
 ## Extends
 
 - `OutgoingResponseOptions`
+
+## Extended by
+
+- [`RedirectBrowserResponseOptions`](../../RedirectBrowserResponse/interfaces/RedirectBrowserResponseOptions.md)
 
 ## Indexable
 

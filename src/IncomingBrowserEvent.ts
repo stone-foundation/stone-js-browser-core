@@ -347,6 +347,15 @@ export class IncomingBrowserEvent extends IncomingEvent {
   }
 
   /**
+   * Generate a unique fingerprint for the event.
+   *
+   * @returns The generated fingerprint as a base64 string.
+   */
+  fingerprint (): string {
+    return btoa([this.method, this.pathname].join('|'))
+  }
+
+  /**
    * Retrieve a value from the query parameters.
    *
    * @param key - The key of the value to retrieve.

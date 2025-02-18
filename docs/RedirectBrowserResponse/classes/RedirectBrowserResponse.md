@@ -2,46 +2,51 @@
 
 ***
 
-[Browser Core Documentation](../../modules.md) / [OutgoingBrowserResponse](../README.md) / OutgoingBrowserResponse
+[Browser Core Documentation](../../modules.md) / [RedirectBrowserResponse](../README.md) / RedirectBrowserResponse
 
-# Class: OutgoingBrowserResponse
+# Class: RedirectBrowserResponse
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L8)
+Defined in: browser-core/src/RedirectBrowserResponse.ts:17
+
+Class representing a RedirectBrowserResponse.
+
+## Author
+
+Mr. Stone <evensstone@gmail.com>
 
 ## Extends
 
-- `OutgoingResponse`
-
-## Extended by
-
-- [`RedirectBrowserResponse`](../../RedirectBrowserResponse/classes/RedirectBrowserResponse.md)
+- [`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md)
 
 ## Constructors
 
-### new OutgoingBrowserResponse()
+### new RedirectBrowserResponse()
 
-> **new OutgoingBrowserResponse**(`options`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
+> **new RedirectBrowserResponse**(`options`): [`RedirectBrowserResponse`](RedirectBrowserResponse.md)
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:27](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L27)
+Defined in: browser-core/src/RedirectBrowserResponse.ts:27
 
-Constructor for OutgoingBrowserResponse.
-Initializes headers and cookies based on the provided options.
+Create a RedirectBrowserResponse.
 
 #### Parameters
 
 ##### options
 
-[`OutgoingBrowserResponseOptions`](../interfaces/OutgoingBrowserResponseOptions.md)
+[`RedirectBrowserResponseOptions`](../interfaces/RedirectBrowserResponseOptions.md)
 
-Options for the outgoing browser response.
+Options for creating the RedirectBrowserResponse.
 
 #### Returns
 
-[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
+[`RedirectBrowserResponse`](RedirectBrowserResponse.md)
+
+#### Throws
+
+HttpError if the status code is not a redirect code.
 
 #### Overrides
 
-`OutgoingResponse.constructor`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`constructor`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#constructors)
 
 ## Properties
 
@@ -55,7 +60,7 @@ The content of the response.
 
 #### Inherited from
 
-`OutgoingResponse._content`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`_content`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#_content)
 
 ***
 
@@ -69,7 +74,7 @@ The status code of the response.
 
 #### Inherited from
 
-`OutgoingResponse._statusCode`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`_statusCode`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#_statuscode)
 
 ***
 
@@ -83,7 +88,7 @@ The status message of the response.
 
 #### Inherited from
 
-`OutgoingResponse._statusMessage`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`_statusMessage`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#_statusmessage)
 
 ***
 
@@ -97,7 +102,7 @@ The metadata associated with the event.
 
 #### Inherited from
 
-`OutgoingResponse.metadata`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`metadata`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#metadata)
 
 ***
 
@@ -111,7 +116,7 @@ The original content of the response.
 
 #### Inherited from
 
-`OutgoingResponse.originalContent`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`originalContent`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#originalcontent)
 
 ***
 
@@ -125,7 +130,15 @@ The source of the event.
 
 #### Inherited from
 
-`OutgoingResponse.source`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`source`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#source)
+
+***
+
+### targetUrl?
+
+> `readonly` `optional` **targetUrl**: `string` \| `URL`
+
+Defined in: browser-core/src/RedirectBrowserResponse.ts:19
 
 ***
 
@@ -139,7 +152,7 @@ The timestamp of the event creation.
 
 #### Inherited from
 
-`OutgoingResponse.timeStamp`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`timeStamp`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#timestamp)
 
 ***
 
@@ -153,15 +166,19 @@ The type of the event.
 
 #### Inherited from
 
-`OutgoingResponse.type`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`type`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#type)
 
 ***
 
 ### OUTGOING\_BROWSER\_RESPONSE
 
-> `static` **OUTGOING\_BROWSER\_RESPONSE**: `string` = `'stonejs@outgoing_browser_response'`
+> `static` **OUTGOING\_BROWSER\_RESPONSE**: `string` = `'stonejs@redirect_browser_response'`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L9)
+Defined in: browser-core/src/RedirectBrowserResponse.ts:18
+
+#### Overrides
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`OUTGOING_BROWSER_RESPONSE`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#outgoing_browser_response)
 
 ## Accessors
 
@@ -183,7 +200,7 @@ The content of the outgoing response.
 
 #### Inherited from
 
-`OutgoingResponse.content`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`content`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#content)
 
 ***
 
@@ -205,7 +222,7 @@ The status code of the response, or undefined if not set.
 
 #### Inherited from
 
-`OutgoingResponse.statusCode`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`statusCode`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#statuscode)
 
 ***
 
@@ -227,7 +244,7 @@ The status message of the response, or undefined if not set.
 
 #### Inherited from
 
-`OutgoingResponse.statusMessage`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`statusMessage`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#statusmessage)
 
 ## Methods
 
@@ -241,7 +258,7 @@ Return a cloned instance.
 
 #### Type Parameters
 
-• **T** *extends* [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
+• **T** *extends* [`RedirectBrowserResponse`](RedirectBrowserResponse.md)
 
 #### Returns
 
@@ -251,7 +268,7 @@ A cloned instance of the current class.
 
 #### Inherited from
 
-`OutgoingResponse.clone`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`clone`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#clone)
 
 ***
 
@@ -285,7 +302,7 @@ The value associated with the key or the fallback.
 
 ##### Inherited from
 
-`OutgoingResponse.get`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`get`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#get)
 
 #### Call Signature
 
@@ -321,7 +338,7 @@ The value associated with the key or the fallback.
 
 ##### Inherited from
 
-`OutgoingResponse.get`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`get`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#get)
 
 ***
 
@@ -355,7 +372,7 @@ The value associated with the key or the fallback.
 
 ##### Inherited from
 
-`OutgoingResponse.getMetadataValue`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`getMetadataValue`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#getmetadatavalue)
 
 #### Call Signature
 
@@ -391,7 +408,7 @@ The value associated with the key or the fallback.
 
 ##### Inherited from
 
-`OutgoingResponse.getMetadataValue`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`getMetadataValue`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#getmetadatavalue)
 
 ***
 
@@ -409,6 +426,10 @@ Check if the status code represents an informational response (1xx).
 
 True if the status code is informational, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`is1xx`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#is1xx)
+
 ***
 
 ### is2xx()
@@ -424,6 +445,10 @@ Check if the status code represents a successful response (2xx).
 `boolean`
 
 True if the status code is successful, otherwise false.
+
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`is2xx`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#is2xx)
 
 ***
 
@@ -441,6 +466,10 @@ Check if the status code represents a redirection response (3xx).
 
 True if the status code is a redirection, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`is3xx`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#is3xx)
+
 ***
 
 ### is4xx()
@@ -456,6 +485,10 @@ Check if the status code represents a client error response (4xx).
 `boolean`
 
 True if the status code is a client error, otherwise false.
+
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`is4xx`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#is4xx)
 
 ***
 
@@ -473,6 +506,10 @@ Check if the status code represents a server error response (5xx).
 
 True if the status code is a server error, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`is5xx`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#is5xx)
+
 ***
 
 ### isError()
@@ -489,6 +526,10 @@ Check if the status code is an error (i.e., 4xx or 5xx).
 
 True if the status code is an error, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isError`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#iserror)
+
 ***
 
 ### isForbidden()
@@ -504,6 +545,10 @@ Check if the status code is 403 (Forbidden).
 `boolean`
 
 True if the status code is 403, otherwise false.
+
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isForbidden`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isforbidden)
 
 ***
 
@@ -535,6 +580,10 @@ The ending value of the range (exclusive).
 
 True if the status code is within the specified range, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isInStatusRange`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isinstatusrange)
+
 ***
 
 ### isInvalid()
@@ -550,6 +599,10 @@ Check if the status code is invalid.
 `boolean`
 
 True if the status code is invalid, otherwise false.
+
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isInvalid`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isinvalid)
 
 ***
 
@@ -567,6 +620,10 @@ Check if the status code is not an error (i.e., not 4xx or 5xx).
 
 True if the status code is not an error, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isNotError`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isnoterror)
+
 ***
 
 ### isNotFound()
@@ -582,6 +639,10 @@ Check if the status code is 404 (Not Found).
 `boolean`
 
 True if the status code is 404, otherwise false.
+
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isNotFound`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isnotfound)
 
 ***
 
@@ -599,6 +660,10 @@ Check if the status code is 200 (OK).
 
 True if the status code is 200, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isOk`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isok)
+
 ***
 
 ### isUnauthorized()
@@ -615,11 +680,15 @@ Check if the status code is 401 (Unauthorized).
 
 True if the status code is 401, otherwise false.
 
+#### Inherited from
+
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`isUnauthorized`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#isunauthorized)
+
 ***
 
 ### prepare()
 
-> **prepare**(`_event`, `_container`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md) \| `Promise`\<[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)\>
+> **prepare**(`_event`, `_container`): [`RedirectBrowserResponse`](RedirectBrowserResponse.md) \| `Promise`\<[`RedirectBrowserResponse`](RedirectBrowserResponse.md)\>
 
 Defined in: core/dist/index.d.ts:326
 
@@ -641,13 +710,13 @@ The container.
 
 #### Returns
 
-[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md) \| `Promise`\<[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)\>
+[`RedirectBrowserResponse`](RedirectBrowserResponse.md) \| `Promise`\<[`RedirectBrowserResponse`](RedirectBrowserResponse.md)\>
 
 This OutgoingResponse instance.
 
 #### Inherited from
 
-`OutgoingResponse.prepare`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`prepare`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#prepare)
 
 ***
 
@@ -681,13 +750,13 @@ This Event instance.
 
 #### Inherited from
 
-`OutgoingResponse.setMetadataValue`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`setMetadataValue`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#setmetadatavalue)
 
 ***
 
 ### create()
 
-> `static` **create**(`options`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
+> `static` **create**(`options`): [`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md)
 
 Defined in: [browser-core/src/OutgoingBrowserResponse.ts:17](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L17)
 
@@ -697,19 +766,19 @@ Create an instance of OutgoingBrowserResponse.
 
 ##### options
 
-[`OutgoingBrowserResponseOptions`](../interfaces/OutgoingBrowserResponseOptions.md)
+[`OutgoingBrowserResponseOptions`](../../OutgoingBrowserResponse/interfaces/OutgoingBrowserResponseOptions.md)
 
 Options for the outgoing browser response.
 
 #### Returns
 
-[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md)
 
 A new instance of OutgoingBrowserResponse.
 
-#### Overrides
+#### Inherited from
 
-`OutgoingResponse.create`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`create`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#create)
 
 ## Events
 
@@ -725,4 +794,4 @@ OUTGOING_RESPONSE Event name, fires on response to the incoming event.
 
 #### Inherited from
 
-`OutgoingResponse.OUTGOING_RESPONSE`
+[`OutgoingBrowserResponse`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md).[`OUTGOING_RESPONSE`](../../OutgoingBrowserResponse/classes/OutgoingBrowserResponse.md#outgoing_response)

@@ -6,7 +6,7 @@
 
 # Enumeration: CookieSameSite
 
-Defined in: [browser-core/src/declarations.ts:17](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L17)
+Defined in: [browser-core/src/declarations.ts:17](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/declarations.ts#L17)
 
 Enum representing possible values for the `SameSite` attribute in cookies.
 
@@ -16,7 +16,7 @@ Enum representing possible values for the `SameSite` attribute in cookies.
 
 > **Lax**: `"lax"`
 
-Defined in: [browser-core/src/declarations.ts:18](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L18)
+Defined in: [browser-core/src/declarations.ts:18](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/declarations.ts#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [browser-core/src/declarations.ts:18](https://github.com/stonemjs/br
 
 > **None**: `"none"`
 
-Defined in: [browser-core/src/declarations.ts:19](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L19)
+Defined in: [browser-core/src/declarations.ts:19](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/declarations.ts#L19)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [browser-core/src/declarations.ts:19](https://github.com/stonemjs/br
 
 > **Strict**: `"strict"`
 
-Defined in: [browser-core/src/declarations.ts:20](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L20)
+Defined in: [browser-core/src/declarations.ts:20](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/declarations.ts#L20)

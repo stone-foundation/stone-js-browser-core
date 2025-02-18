@@ -8,6 +8,6 @@
 
 > **HttpMethod**: `"GET"`
 
-Defined in: [browser-core/src/declarations.ts:4](https://github.com/stonemjs/browser-core/blob/58b3a039142f6865ef6912ef058985d46f08d508/src/declarations.ts#L4)
+Defined in: [browser-core/src/declarations.ts:4](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/declarations.ts#L4)
 
 Http method
