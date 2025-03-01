@@ -19,6 +19,16 @@ export class RedirectBrowserResponse extends OutgoingBrowserResponse {
   public readonly targetUrl?: string | URL
 
   /**
+   * Create an instance of OutgoingBrowserResponse.
+   *
+   * @param options - Options for the outgoing browser response.
+   * @returns A new instance of OutgoingBrowserResponse.
+   */
+  static create (options: RedirectBrowserResponseOptions): RedirectBrowserResponse {
+    return new RedirectBrowserResponse(options)
+  }
+
+  /**
    * Create a RedirectBrowserResponse.
    *
    * @param options - Options for creating the RedirectBrowserResponse.

@@ -132,12 +132,13 @@ export class CookieCollection {
    * Remove a cookie from the collection.
    *
    * @param name - Cookie name to remove.
+   * @param options - Cookie options.
    */
-  remove (name: string): this {
+  remove (name: string, options: CookieOptions = {}): this {
     const currentCookie = this.cookies.get(name)
     if (currentCookie !== undefined) {
       this.cookies.delete(name)
-      this.saveCookie(currentCookie.cloneWith('', { maxAge: -1 }))
+      this.saveCookie(currentCookie.cloneWith('', { ...options, maxAge: -1 }))
     }
     return this
   }

@@ -6,7 +6,7 @@
 
 # Class: OutgoingBrowserResponse
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L8)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L8)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [browser-core/src/OutgoingBrowserResponse.ts:8](https://github.com/s
 
 > **new OutgoingBrowserResponse**(`options`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:27](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L27)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:27](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L27)
 
 Constructor for OutgoingBrowserResponse.
 Initializes headers and cookies based on the provided options.
@@ -161,7 +161,7 @@ The type of the event.
 
 > `static` **OUTGOING\_BROWSER\_RESPONSE**: `string` = `'stonejs@outgoing_browser_response'`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L9)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L9)
 
 ## Accessors
 
@@ -399,7 +399,7 @@ The value associated with the key or the fallback.
 
 > **is1xx**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:58](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L58)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:58](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L58)
 
 Check if the status code represents an informational response (1xx).
 
@@ -415,7 +415,7 @@ True if the status code is informational, otherwise false.
 
 > **is2xx**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:67](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L67)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:67](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L67)
 
 Check if the status code represents a successful response (2xx).
 
@@ -431,7 +431,7 @@ True if the status code is successful, otherwise false.
 
 > **is3xx**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:76](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L76)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:76](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L76)
 
 Check if the status code represents a redirection response (3xx).
 
@@ -447,7 +447,7 @@ True if the status code is a redirection, otherwise false.
 
 > **is4xx**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:85](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L85)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:85](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L85)
 
 Check if the status code represents a client error response (4xx).
 
@@ -463,7 +463,7 @@ True if the status code is a client error, otherwise false.
 
 > **is5xx**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:94](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L94)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:94](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L94)
 
 Check if the status code represents a server error response (5xx).
 
@@ -479,7 +479,7 @@ True if the status code is a server error, otherwise false.
 
 > **isError**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:112](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L112)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:112](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L112)
 
 Check if the status code is an error (i.e., 4xx or 5xx).
 
@@ -495,7 +495,7 @@ True if the status code is an error, otherwise false.
 
 > **isForbidden**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:139](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L139)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:139](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L139)
 
 Check if the status code is 403 (Forbidden).
 
@@ -511,7 +511,7 @@ True if the status code is 403, otherwise false.
 
 > **isInStatusRange**(`start`, `end`): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:38](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L38)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:38](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L38)
 
 Check if the status code falls within the specified range.
 
@@ -541,7 +541,7 @@ True if the status code is within the specified range, otherwise false.
 
 > **isInvalid**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:48](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L48)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:48](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L48)
 
 Check if the status code is invalid.
 
@@ -557,7 +557,7 @@ True if the status code is invalid, otherwise false.
 
 > **isNotError**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:103](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L103)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:103](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L103)
 
 Check if the status code is not an error (i.e., not 4xx or 5xx).
 
@@ -573,7 +573,7 @@ True if the status code is not an error, otherwise false.
 
 > **isNotFound**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:148](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L148)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:148](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L148)
 
 Check if the status code is 404 (Not Found).
 
@@ -589,7 +589,7 @@ True if the status code is 404, otherwise false.
 
 > **isOk**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:121](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L121)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:121](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L121)
 
 Check if the status code is 200 (OK).
 
@@ -605,7 +605,7 @@ True if the status code is 200, otherwise false.
 
 > **isUnauthorized**(): `boolean`
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:130](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L130)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:130](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L130)
 
 Check if the status code is 401 (Unauthorized).
 
@@ -621,7 +621,7 @@ True if the status code is 401, otherwise false.
 
 > **prepare**(`_event`, `_container`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md) \| `Promise`\<[`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)\>
 
-Defined in: core/dist/index.d.ts:326
+Defined in: core/dist/index.d.ts:340
 
 Prepare response before sending it.
 
@@ -648,6 +648,34 @@ This OutgoingResponse instance.
 #### Inherited from
 
 `OutgoingResponse.prepare`
+
+***
+
+### setContent()
+
+> **setContent**(`content`): `this`
+
+Defined in: core/dist/index.d.ts:332
+
+Set the content of the response.
+
+#### Parameters
+
+##### content
+
+`unknown`
+
+The content to set.
+
+#### Returns
+
+`this`
+
+This OutgoingResponse instance.
+
+#### Inherited from
+
+`OutgoingResponse.setContent`
 
 ***
 
@@ -685,11 +713,39 @@ This Event instance.
 
 ***
 
+### setStatusCode()
+
+> **setStatusCode**(`statusCode`): `this`
+
+Defined in: core/dist/index.d.ts:325
+
+Set the status code of the response.
+
+#### Parameters
+
+##### statusCode
+
+`number`
+
+The status code to set.
+
+#### Returns
+
+`this`
+
+This OutgoingResponse instance.
+
+#### Inherited from
+
+`OutgoingResponse.setStatusCode`
+
+***
+
 ### create()
 
 > `static` **create**(`options`): [`OutgoingBrowserResponse`](OutgoingBrowserResponse.md)
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:17](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/OutgoingBrowserResponse.ts#L17)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:17](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/OutgoingBrowserResponse.ts#L17)
 
 Create an instance of OutgoingBrowserResponse.
 

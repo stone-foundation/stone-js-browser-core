@@ -6,7 +6,7 @@
 
 # Interface: RedirectBrowserResponseOptions
 
-Defined in: browser-core/src/RedirectBrowserResponse.ts:8
+Defined in: [browser-core/src/RedirectBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/RedirectBrowserResponse.ts#L8)
 
 Options for creating a Redirect HTTP Response.
 
@@ -108,4 +108,4 @@ Defined in: core/dist/index.d.ts:29
 
 > **url**: `string` \| `URL`
 
-Defined in: browser-core/src/RedirectBrowserResponse.ts:9
+Defined in: [browser-core/src/RedirectBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/RedirectBrowserResponse.ts#L9)

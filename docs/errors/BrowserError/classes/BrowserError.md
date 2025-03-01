@@ -6,7 +6,7 @@
 
 # Class: BrowserError
 
-Defined in: [browser-core/src/errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/errors/BrowserError.ts#L6)
+Defined in: [browser-core/src/errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/errors/BrowserError.ts#L6)
 
 Custom error for Browser operations.
 
@@ -20,7 +20,7 @@ Custom error for Browser operations.
 
 > **new BrowserError**(`message`, `options`?): [`BrowserError`](BrowserError.md)
 
-Defined in: [browser-core/src/errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/a1c2a931b309b7a521917fcf25e69606878b4d2b/src/errors/BrowserError.ts#L7)
+Defined in: [browser-core/src/errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/errors/BrowserError.ts#L7)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [browser-core/src/errors/BrowserError.ts:7](https://github.com/stone
 
 > `readonly` `optional` **cause**: `Error`
 
-Defined in: core/dist/index.d.ts:3296
+Defined in: core/dist/index.d.ts:2854
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: core/dist/index.d.ts:3296
 
 > `readonly` `optional` **code**: `string`
 
-Defined in: core/dist/index.d.ts:3295
+Defined in: core/dist/index.d.ts:2853
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: core/dist/index.d.ts:3295
 
 > `readonly` `optional` **metadata**: `unknown`
 
-Defined in: core/dist/index.d.ts:3297
+Defined in: core/dist/index.d.ts:2855
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: core/dist/index.d.ts:3297
 
 > **toString**(`multiline`?): `string`
 
-Defined in: core/dist/index.d.ts:3318
+Defined in: core/dist/index.d.ts:2876
 
 Converts the error to a formatted string representation.
 
@@ -110,7 +110,7 @@ A formatted error string.
 
 > `static` **create**\<`T`\>(`message`, `options`?): `T`
 
-Defined in: core/dist/index.d.ts:3304
+Defined in: core/dist/index.d.ts:2862
 
 Create a RuntimeError.
 
