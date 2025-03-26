@@ -6,7 +6,7 @@
 
 # Class: CookieCollection
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:8](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L8)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:8](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L8)
 
 Class representing a collection of Cookies.
 
@@ -16,7 +16,7 @@ Class representing a collection of Cookies.
 
 > `protected` **new CookieCollection**(`cookie`?, `options`?, `domDocument`?): [`CookieCollection`](CookieCollection.md)
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:29](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L29)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:29](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L29)
 
 Create a CookieCollection.
 
@@ -48,7 +48,7 @@ Cookies options.
 
 > **add**(`name`, `value`, `options`): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:42](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L42)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:42](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L42)
 
 Add a cookie to the collection.
 
@@ -82,7 +82,7 @@ Cookie options.
 
 > **all**(): [`Cookie`](../../Cookie/classes/Cookie.md)[]
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:149](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L149)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:149](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L149)
 
 Get all cookies in the collection.
 
@@ -96,7 +96,7 @@ Get all cookies in the collection.
 
 > **clear**(): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:163](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L163)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:163](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L163)
 
 Clear all cookies from the collection.
 
@@ -122,7 +122,7 @@ Fallback value if the cookie does not exist.
 
 > **get**(`name`): `undefined` \| [`Cookie`](../../Cookie/classes/Cookie.md)
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:72](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L72)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:72](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L72)
 
 Get a cookie from the collection.
 
@@ -154,7 +154,7 @@ Fallback value if the cookie does not exist.
 
 > **get**(`name`, `fallback`): [`Cookie`](../../Cookie/classes/Cookie.md)
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:81](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L81)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:81](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L81)
 
 Get a cookie from the collection.
 
@@ -206,7 +206,7 @@ Fallback value if the cookie does not exist.
 
 > **getValue**\<`ValueType`\>(`name`): `undefined` \| `ValueType`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:100](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L100)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:100](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L100)
 
 Get a cookie value from the collection.
 
@@ -242,7 +242,7 @@ Fallback value if the cookie does not exist.
 
 > **getValue**\<`ValueType`\>(`name`, `fallback`): `ValueType`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:109](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L109)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:109](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L109)
 
 Get a cookie value from the collection.
 
@@ -286,7 +286,7 @@ Fallback value if the cookie does not exist.
 
 > **has**(`name`): `boolean`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:127](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L127)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:127](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L127)
 
 Check if the collection has a cookie.
 
@@ -308,7 +308,7 @@ Cookie name.
 
 > **isEmpty**(): `boolean`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:156](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L156)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:156](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L156)
 
 Check if the collection is empty.
 
@@ -322,7 +322,7 @@ Check if the collection is empty.
 
 > **remove**(`name`, `options`): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:137](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L137)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:137](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L137)
 
 Remove a cookie from the collection.
 
@@ -350,7 +350,7 @@ Cookie options.
 
 > **secure**(`value`): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:173](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L173)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:173](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L173)
 
 Set secure flag for all cookies in the collection.
 
@@ -372,7 +372,7 @@ Whether the cookies are secure.
 
 > **setOptions**(`options`): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:183](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L183)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:183](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L183)
 
 Set options for all cookies in the collection.
 
@@ -394,7 +394,7 @@ Cookie options.
 
 > **update**(`name`, `value`, `options`): `this`
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:56](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L56)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:56](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L56)
 
 Update a cookie in the collection.
 
@@ -428,7 +428,7 @@ Cookie options.
 
 > `static` **create**(`cookie`?, `options`?, `domDocument`?): [`CookieCollection`](CookieCollection.md)
 
-Defined in: [browser-core/src/cookies/CookieCollection.ts:19](https://github.com/stonemjs/browser-core/blob/dd41465b84f4b80e02cbd545eabae9ceb9083e35/src/cookies/CookieCollection.ts#L19)
+Defined in: [browser-core/src/cookies/CookieCollection.ts:19](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/cookies/CookieCollection.ts#L19)
 
 Create a CookieCollection.
 

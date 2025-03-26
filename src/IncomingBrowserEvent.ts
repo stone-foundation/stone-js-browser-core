@@ -136,6 +136,11 @@ export class IncomingBrowserEvent extends IncomingEvent {
     return this.protocol === 'https'
   }
 
+  /** @returns The user agent of the request. */
+  get userAgent (): string | undefined {
+    return window.navigator.userAgent
+  }
+
   /**
    * Get data from the request.
    *
