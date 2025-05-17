@@ -6,7 +6,7 @@
 
 # Class: IncomingBrowserEvent
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:22](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L22)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:22](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L22)
 
 Class representing an IncomingBrowserEvent.
 
@@ -24,7 +24,7 @@ Mr. Stone <evensstone@gmail.com>
 
 > `protected` **new IncomingBrowserEvent**(`options`): [`IncomingBrowserEvent`](IncomingBrowserEvent.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:57](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L57)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:57](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L57)
 
 Constructor for IncomingBrowserEvent.
 
@@ -54,7 +54,7 @@ If the URL option is not a valid instance of URL.
 
 > `readonly` **cookies**: [`CookieCollection`](../../cookies/CookieCollection/classes/CookieCollection.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:32](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L32)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:32](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L32)
 
 The cookies included in the request.
 
@@ -92,7 +92,7 @@ The metadata associated with the event.
 
 > `readonly` **method**: `"GET"`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:30](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L30)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:30](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L30)
 
 The HTTP method of the request.
 
@@ -102,7 +102,7 @@ The HTTP method of the request.
 
 > `readonly` **protocol**: `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:34](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L34)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:34](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L34)
 
 The protocol used for the request (e.g., http or https).
 
@@ -112,7 +112,7 @@ The protocol used for the request (e.g., http or https).
 
 > `readonly` **query**: `URLSearchParams`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:28](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L28)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:28](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L28)
 
 The query parameters of the request.
 
@@ -122,7 +122,7 @@ The query parameters of the request.
 
 > `readonly` `optional` **queryString**: `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:36](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L36)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:36](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L36)
 
 The query string of the request.
 
@@ -132,7 +132,7 @@ The query string of the request.
 
 > `protected` `optional` **routeResolver**: () => [`IRoute`](../../declarations/interfaces/IRoute.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:39](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L39)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:39](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L39)
 
 #### Returns
 
@@ -186,7 +186,7 @@ The type of the event.
 
 > `readonly` **url**: `URL`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:26](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L26)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:26](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L26)
 
 The URL of the request.
 
@@ -196,7 +196,7 @@ The URL of the request.
 
 > `protected` `optional` **userResolver**: () => `unknown`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:38](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L38)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:38](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L38)
 
 #### Returns
 
@@ -208,7 +208,7 @@ Defined in: [browser-core/src/IncomingBrowserEvent.ts:38](https://github.com/sto
 
 > `static` **INCOMING\_BROWSER\_EVENT**: `string` = `'stonejs@incoming_browser_event'`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:23](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L23)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:23](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L23)
 
 ## Accessors
 
@@ -218,7 +218,7 @@ Defined in: [browser-core/src/IncomingBrowserEvent.ts:23](https://github.com/sto
 
 > **get** **decodedPathname**(): `undefined` \| `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:81](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L81)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:81](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L81)
 
 ##### Returns
 
@@ -234,7 +234,7 @@ The decoded pathname of the URL.
 
 > **get** **hash**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:90](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L90)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:90](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L90)
 
 ##### Returns
 
@@ -250,7 +250,7 @@ The hash part of the URL.
 
 > **get** **host**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:95](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L95)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:95](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L95)
 
 ##### Returns
 
@@ -266,7 +266,7 @@ The host of the URL (hostname:port).
 
 > **get** **hostname**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:100](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L100)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:100](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L100)
 
 ##### Returns
 
@@ -282,7 +282,7 @@ The hostname of the URL.
 
 > **get** **isSecure**(): `boolean`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:135](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L135)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:135](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L135)
 
 ##### Returns
 
@@ -298,7 +298,7 @@ Whether the request was made over a secure connection.
 
 > **get** **params**(): `undefined` \| `Record`\<`string`, `unknown`\>
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:105](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L105)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:105](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L105)
 
 ##### Returns
 
@@ -314,7 +314,7 @@ The route parameters.
 
 > **get** **path**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:110](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L110)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:110](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L110)
 
 ##### Returns
 
@@ -330,7 +330,7 @@ The full path including pathname and search query.
 
 > **get** **pathname**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:115](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L115)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:115](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L115)
 
 ##### Returns
 
@@ -368,7 +368,7 @@ The platform of the event source.
 
 > **get** **scheme**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:125](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L125)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:125](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L125)
 
 ##### Returns
 
@@ -384,7 +384,7 @@ The protocol of the URL (e.g., "http" or "https").
 
 > **get** **segments**(): `string`[]
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:130](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L130)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:130](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L130)
 
 ##### Returns
 
@@ -400,7 +400,7 @@ The URL segments split by '/'.
 
 > **get** **uri**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:120](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L120)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:120](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L120)
 
 ##### Returns
 
@@ -416,7 +416,7 @@ The full URL as a string.
 
 > **get** **userAgent**(): `undefined` \| `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:140](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L140)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:140](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L140)
 
 ##### Returns
 
@@ -454,7 +454,7 @@ A cloned instance of the current class.
 
 > **fingerprint**(): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:359](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L359)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:359](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L359)
 
 Generate a unique fingerprint for the event.
 
@@ -489,7 +489,7 @@ A fallback value if the key is not found.
 
 > **get**\<`TReturn`\>(`key`): `undefined` \| `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:157](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L157)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:157](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L157)
 
 Get data from the request.
 
@@ -536,7 +536,7 @@ A fallback value if the key is not found.
 
 > **get**\<`TReturn`\>(`key`, `fallback`): `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:173](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L173)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:173](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L173)
 
 Get data from the request.
 
@@ -603,7 +603,7 @@ A fallback value if the cookie is not found.
 
 > **getCookie**\<`TReturn`\>(`name`): `undefined` \| `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:204](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L204)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:204](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L204)
 
 Get a cookie value.
 
@@ -639,7 +639,7 @@ A fallback value if the cookie is not found.
 
 > **getCookie**\<`TReturn`\>(`name`, `fallback`): `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:213](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L213)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:213](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L213)
 
 Get a cookie value.
 
@@ -765,7 +765,7 @@ The fallback value if the parameter does not exist.
 
 > **getParam**\<`TReturn`\>(`name`): `undefined` \| `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:322](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L322)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:322](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L322)
 
 Retrieve a parameter from the route if it exists.
 
@@ -801,7 +801,7 @@ The fallback value if the parameter does not exist.
 
 > **getParam**\<`TReturn`\>(`name`, `fallback`): `TReturn`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:331](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L331)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:331](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L331)
 
 Retrieve a parameter from the route if it exists.
 
@@ -845,7 +845,7 @@ The fallback value if the parameter does not exist.
 
 > **getRoute**\<`RouteType`\>(): `undefined` \| `RouteType`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:312](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L312)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:312](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L312)
 
 Return the current route or a route parameter.
 
@@ -865,7 +865,7 @@ The route parameter or the route object.
 
 > **getRouteResolver**(): () => `undefined` \| [`IRoute`](../../declarations/interfaces/IRoute.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:292](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L292)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:292](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L292)
 
 Get the route resolver function.
 
@@ -885,7 +885,7 @@ The route resolver function.
 
 > **getUri**(`withDomain`): `undefined` \| `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:254](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L254)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:254](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L254)
 
 Get the URI with or without the domain.
 
@@ -909,7 +909,7 @@ The URI with or without the domain.
 
 > **getUser**\<`T`\>(): `undefined` \| `T`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:263](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L263)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:263](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L263)
 
 Get the user instance.
 
@@ -929,7 +929,7 @@ The user object, resolved through a user resolver function if available.
 
 > **getUserResolver**(): () => `unknown`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:272](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L272)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:272](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L272)
 
 Get the user resolver function.
 
@@ -949,7 +949,7 @@ The user resolver function.
 
 > **hasCookie**(`name`): `boolean`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:233](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L233)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:233](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L233)
 
 Check if a cookie exists.
 
@@ -973,7 +973,7 @@ True if the cookie exists, otherwise false.
 
 > **isMethod**(`method`): `boolean`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:350](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L350)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:350](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L350)
 
 Check if the current event method matches the given method.
 
@@ -990,6 +990,34 @@ The method to check.
 `boolean`
 
 True if the event method matches, otherwise false.
+
+***
+
+### isPlatform()
+
+> **isPlatform**(`platform`): `boolean`
+
+Defined in: core/dist/index.d.ts:204
+
+Check if the event source is from a platform.
+
+#### Parameters
+
+##### platform
+
+The platform to check.
+
+`string` | `symbol`
+
+#### Returns
+
+`boolean`
+
+True if the event source is from the platform, false otherwise.
+
+#### Inherited from
+
+`IncomingEvent.isPlatform`
 
 ***
 
@@ -1031,7 +1059,7 @@ This Event instance.
 
 > **setRouteResolver**\<`RouteType`\>(`resolver`): `this`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:302](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L302)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:302](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L302)
 
 Set the route resolver function.
 
@@ -1059,7 +1087,7 @@ The current instance for method chaining.
 
 > **setUserResolver**(`resolver`): `this`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:282](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L282)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:282](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L282)
 
 Set the user resolver function.
 
@@ -1083,7 +1111,7 @@ The current instance for method chaining.
 
 > **uriForPath**(`path`): `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:244](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L244)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:244](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L244)
 
 Generate a full URL for the given path.
 
@@ -1107,7 +1135,7 @@ The full URL for the given path.
 
 > `static` **create**(`options`): [`IncomingBrowserEvent`](IncomingBrowserEvent.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:47](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L47)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:47](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L47)
 
 Create an IncomingBrowserEvent.
 

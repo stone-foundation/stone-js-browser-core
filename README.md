@@ -1,6 +1,6 @@
 # Stone.js: Browser Core
 
-[![npm](https://img.shields.io/npm/l/@stone-js/browser-core)](https://opensource.org/licenses/Apache-2.0)
+[![npm](https://img.shields.io/npm/l/@stone-js/browser-core)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/@stone-js/browser-core)](https://www.npmjs.com/package/@stone-js/browser-core)
 [![npm](https://img.shields.io/npm/dm/@stone-js/browser-core)](https://www.npmjs.com/package/@stone-js/browser-core)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
@@ -12,7 +12,7 @@ Stone.js Browser Core features with typings.
 
 ---
 
-Get started with the [documentation](https://stonejs.com/docs/browser).
+Get started with the [documentation](https://stonejs.com/docs/).
 
 
 ## Contributing

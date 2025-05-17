@@ -6,7 +6,7 @@
 
 # Interface: IncomingBrowserEventOptions
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:10](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L10)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:10](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L10)
 
 IncomingBrowserEventOptions interface.
 
@@ -24,7 +24,7 @@ IncomingBrowserEventOptions interface.
 
 > `optional` **cookies**: [`CookieCollection`](../../cookies/CookieCollection/classes/CookieCollection.md)
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:14](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L14)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:14](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L14)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: core/dist/index.d.ts:32
 
 > `optional` **protocol**: `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:12](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L12)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:12](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L12)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [browser-core/src/IncomingBrowserEvent.ts:12](https://github.com/sto
 
 > `optional` **queryString**: `string`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:13](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L13)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:13](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L13)
 
 ***
 
@@ -108,4 +108,4 @@ Defined in: core/dist/index.d.ts:29
 
 > **url**: `URL`
 
-Defined in: [browser-core/src/IncomingBrowserEvent.ts:11](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/IncomingBrowserEvent.ts#L11)
+Defined in: [browser-core/src/IncomingBrowserEvent.ts:11](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/IncomingBrowserEvent.ts#L11)

@@ -6,7 +6,7 @@
 
 # Interface: OutgoingBrowserResponseOptions
 
-Defined in: [browser-core/src/OutgoingBrowserResponse.ts:6](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/OutgoingBrowserResponse.ts#L6)
+Defined in: [browser-core/src/OutgoingBrowserResponse.ts:6](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/OutgoingBrowserResponse.ts#L6)
 
 Options for creating an Outgoing Browser Response.
 
@@ -28,7 +28,7 @@ Options for creating an Outgoing Browser Response.
 
 > `optional` **content**: `unknown`
 
-Defined in: core/dist/index.d.ts:268
+Defined in: core/dist/index.d.ts:275
 
 #### Inherited from
 
@@ -64,7 +64,7 @@ Defined in: core/dist/index.d.ts:30
 
 > `optional` **statusCode**: `number`
 
-Defined in: core/dist/index.d.ts:269
+Defined in: core/dist/index.d.ts:276
 
 #### Inherited from
 
@@ -76,7 +76,7 @@ Defined in: core/dist/index.d.ts:269
 
 > `optional` **statusMessage**: `string`
 
-Defined in: core/dist/index.d.ts:270
+Defined in: core/dist/index.d.ts:277
 
 #### Inherited from
 

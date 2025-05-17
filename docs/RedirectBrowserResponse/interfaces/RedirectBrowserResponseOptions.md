@@ -6,7 +6,7 @@
 
 # Interface: RedirectBrowserResponseOptions
 
-Defined in: [browser-core/src/RedirectBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/RedirectBrowserResponse.ts#L8)
+Defined in: [browser-core/src/RedirectBrowserResponse.ts:8](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/RedirectBrowserResponse.ts#L8)
 
 Options for creating a Redirect HTTP Response.
 
@@ -24,7 +24,7 @@ Options for creating a Redirect HTTP Response.
 
 > `optional` **content**: `unknown`
 
-Defined in: core/dist/index.d.ts:268
+Defined in: core/dist/index.d.ts:275
 
 #### Inherited from
 
@@ -60,7 +60,7 @@ Defined in: core/dist/index.d.ts:30
 
 > `optional` **statusCode**: `number`
 
-Defined in: core/dist/index.d.ts:269
+Defined in: core/dist/index.d.ts:276
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ Defined in: core/dist/index.d.ts:269
 
 > `optional` **statusMessage**: `string`
 
-Defined in: core/dist/index.d.ts:270
+Defined in: core/dist/index.d.ts:277
 
 #### Inherited from
 
@@ -108,4 +108,4 @@ Defined in: core/dist/index.d.ts:29
 
 > **url**: `string` \| `URL`
 
-Defined in: [browser-core/src/RedirectBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/fa5573518c1ef095e02e60009eef605c26ff056c/src/RedirectBrowserResponse.ts#L9)
+Defined in: [browser-core/src/RedirectBrowserResponse.ts:9](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/RedirectBrowserResponse.ts#L9)
