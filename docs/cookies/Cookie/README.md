@@ -1,8 +1,8 @@
-[**Browser Core Documentation v0.0.2**](../../README.md)
+[**Browser Core Documentation**](../../README.md)
 
 ***
 
-[Browser Core Documentation](../../modules.md) / cookies/Cookie
+[Browser Core Documentation](../../README.md) / cookies/Cookie
 
 # cookies/Cookie
 

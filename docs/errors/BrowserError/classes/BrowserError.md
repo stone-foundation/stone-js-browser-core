@@ -1,12 +1,12 @@
-[**Browser Core Documentation v0.0.2**](../../../README.md)
+[**Browser Core Documentation**](../../../README.md)
 
 ***
 
-[Browser Core Documentation](../../../modules.md) / [errors/BrowserError](../README.md) / BrowserError
+[Browser Core Documentation](../../../README.md) / [errors/BrowserError](../README.md) / BrowserError
 
 # Class: BrowserError
 
-Defined in: [browser-core/src/errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/errors/BrowserError.ts#L6)
+Defined in: [errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/361f0c0c27ded9b8e26c081642a73881c7a22507/src/errors/BrowserError.ts#L6)
 
 Custom error for Browser operations.
 
@@ -16,11 +16,11 @@ Custom error for Browser operations.
 
 ## Constructors
 
-### new BrowserError()
+### Constructor
 
-> **new BrowserError**(`message`, `options`?): [`BrowserError`](BrowserError.md)
+> **new BrowserError**(`message`, `options?`): `BrowserError`
 
-Defined in: [browser-core/src/errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/408e82465a131a47c05457385f3cbf210ec88032/src/errors/BrowserError.ts#L7)
+Defined in: [errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/361f0c0c27ded9b8e26c081642a73881c7a22507/src/errors/BrowserError.ts#L7)
 
 #### Parameters
 
@@ -34,108 +34,8 @@ Defined in: [browser-core/src/errors/BrowserError.ts:7](https://github.com/stone
 
 #### Returns
 
-[`BrowserError`](BrowserError.md)
+`BrowserError`
 
 #### Overrides
 
 `InitializationError.constructor`
-
-## Properties
-
-### cause?
-
-> `readonly` `optional` **cause**: `Error`
-
-Defined in: core/dist/index.d.ts:3372
-
-#### Inherited from
-
-`InitializationError.cause`
-
-***
-
-### code?
-
-> `readonly` `optional` **code**: `string`
-
-Defined in: core/dist/index.d.ts:3371
-
-#### Inherited from
-
-`InitializationError.code`
-
-***
-
-### metadata?
-
-> `readonly` `optional` **metadata**: `unknown`
-
-Defined in: core/dist/index.d.ts:3373
-
-#### Inherited from
-
-`InitializationError.metadata`
-
-## Methods
-
-### toString()
-
-> **toString**(`multiline`?): `string`
-
-Defined in: core/dist/index.d.ts:3394
-
-Converts the error to a formatted string representation.
-
-#### Parameters
-
-##### multiline?
-
-`boolean`
-
-Determine if output value must be multiline or not.
-
-#### Returns
-
-`string`
-
-A formatted error string.
-
-#### Inherited from
-
-`InitializationError.toString`
-
-***
-
-### create()
-
-> `static` **create**\<`T`\>(`message`, `options`?): `T`
-
-Defined in: core/dist/index.d.ts:3380
-
-Create a RuntimeError.
-
-#### Type Parameters
-
-• **T** *extends* `RuntimeError` = `RuntimeError`
-
-#### Parameters
-
-##### message
-
-`string`
-
-##### options?
-
-`ErrorOptions`
-
-The options to create a RuntimeError.
-
-#### Returns
-
-`T`
-
-A new RuntimeError instance.
-
-#### Inherited from
-
-`InitializationError.create`

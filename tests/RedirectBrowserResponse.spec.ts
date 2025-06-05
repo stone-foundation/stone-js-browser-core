@@ -36,7 +36,7 @@ describe('RedirectBrowserResponse', () => {
   it('should throw BrowserError url is empty', () => {
     expect(() => {
       // @ts-expect-error: url is empty
-      RedirectBrowserResponse.create({ statusCode: 302 })
+      RedirectBrowserResponse.to(undefined)
     }).toThrowError(BrowserError)
   })
 

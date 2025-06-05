@@ -19,13 +19,24 @@ export class RedirectBrowserResponse extends OutgoingBrowserResponse {
   public readonly targetUrl?: string | URL
 
   /**
-   * Create an instance of OutgoingBrowserResponse.
+   * Create an instance of RedirectBrowserResponse.
    *
    * @param options - Options for the outgoing browser response.
-   * @returns A new instance of OutgoingBrowserResponse.
+   * @returns A new instance of RedirectBrowserResponse.
    */
   static create (options: RedirectBrowserResponseOptions): RedirectBrowserResponse {
     return new RedirectBrowserResponse(options)
+  }
+
+  /**
+   * Create an instance of RedirectBrowserResponse from the given path or URL.
+   *
+   * @param url - The path or URL to redirect to. If a string is provided, it will be treated as a relative path.
+   * @param statusCode - The HTTP status code for the redirect (default is 302).
+   * @returns A new instance of RedirectBrowserResponse.
+   */
+  static to (url: string | URL, statusCode: number = 302): RedirectBrowserResponse {
+    return new RedirectBrowserResponse({ url, statusCode })
   }
 
   /**
