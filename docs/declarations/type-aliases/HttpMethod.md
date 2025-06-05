@@ -1,13 +1,13 @@
-[**Browser Core Documentation v0.0.2**](../../README.md)
+[**Browser Core Documentation**](../../README.md)
 
 ***
 
-[Browser Core Documentation](../../modules.md) / [declarations](../README.md) / HttpMethod
+[Browser Core Documentation](../../README.md) / [declarations](../README.md) / HttpMethod
 
 # Type Alias: HttpMethod
 
-> **HttpMethod**: `"GET"`
+> **HttpMethod** = `"GET"`
 
-Defined in: [declarations.ts:4](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/declarations.ts#L4)
+Defined in: [declarations.ts:4](https://github.com/stonemjs/browser-core/blob/361f0c0c27ded9b8e26c081642a73881c7a22507/src/declarations.ts#L4)
 
 Http method

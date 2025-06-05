@@ -67,6 +67,7 @@ export class CookieCollection {
    * Get a cookie from the collection.
    *
    * @param name - Cookie name.
+   * @returns Cookie value.
    */
   get (name: string): Cookie | undefined
 
@@ -75,6 +76,7 @@ export class CookieCollection {
    *
    * @param name - Cookie name.
    * @param fallback - Fallback value if the cookie does not exist.
+   * @returns Cookie value.
    */
   get (name: string, fallback: Cookie): Cookie
 
@@ -83,9 +85,38 @@ export class CookieCollection {
    *
    * @param name - Cookie name.
    * @param fallback - Fallback value if the cookie does not exist.
+   * @returns Cookie value.
    */
   get (name: string, fallback?: Cookie): Cookie | undefined {
     return this.cookies.get(name) ?? fallback
+  }
+
+  /**
+   * Get a cookie value from the collection.
+   *
+   * @param name - Cookie name.
+   * @returns Cookie value.
+   */
+  getValue<ValueType = unknown>(name: string): ValueType | undefined
+
+  /**
+   * Get a cookie value from the collection.
+   *
+   * @param name - Cookie name.
+   * @param fallback - Fallback value if the cookie does not exist.
+   * @returns Cookie value.
+   */
+  getValue<ValueType = unknown>(name: string, fallback: ValueType): ValueType
+
+  /**
+   * Get a cookie value from the collection.
+   *
+   * @param name - Cookie name.
+   * @param fallback - Fallback value if the cookie does not exist.
+   * @returns Cookie value.
+   */
+  getValue<ValueType = unknown>(name: string, fallback?: ValueType): ValueType | undefined {
+    return this.cookies.get(name)?.getValue() ?? fallback
   }
 
   /**
@@ -101,12 +132,13 @@ export class CookieCollection {
    * Remove a cookie from the collection.
    *
    * @param name - Cookie name to remove.
+   * @param options - Cookie options.
    */
-  remove (name: string): this {
+  remove (name: string, options: CookieOptions = {}): this {
     const currentCookie = this.cookies.get(name)
     if (currentCookie !== undefined) {
       this.cookies.delete(name)
-      this.saveCookie(currentCookie.cloneWith('', { maxAge: -1 }))
+      this.saveCookie(currentCookie.cloneWith('', { ...options, maxAge: -1 }))
     }
     return this
   }

@@ -1,6 +1,11 @@
-import { BrowserError } from '../../src/errors/BrowserError'
-import { CookieCollection } from '../../src/cookies/CookieCollection'
-import { IncomingBrowserEvent, IncomingBrowserEventOptions } from '../../src/events/IncomingBrowserEvent'
+import { BrowserError } from '../src/errors/BrowserError'
+import { CookieCollection } from '../src/cookies/CookieCollection'
+import { IncomingBrowserEvent, IncomingBrowserEventOptions } from '../src/IncomingBrowserEvent'
+
+// Mock Symbol.metadata for testing purposes
+vi.hoisted(() => {
+  globalThis.window = { navigator: { userAgent: 'Mozilla/5.0' } } as any
+})
 
 // Mock options for IncomingBrowserEvent
 const mockOptions: IncomingBrowserEventOptions = {
@@ -39,6 +44,7 @@ describe('IncomingBrowserEvent', () => {
     expect(event.host).toBe('localhost')
     expect(event.hash).toBe('#title')
     expect(event.hostname).toBe('localhost')
+    expect(event.userAgent).toBe('Mozilla/5.0')
     expect(event.pathname).toBe('/test')
     expect(event.params).toBeUndefined()
     expect(event.path).toBe('/test')
@@ -64,6 +70,12 @@ describe('IncomingBrowserEvent', () => {
     // @ts-expect-error - Accessing private property for testing purposes
     event.url = { pathname: '%', href: 'http://localhost/test#title' }
     expect(event.getUri(true)).toBe('http://localhost/')
+  })
+
+  it('should generate a valid browser fingerprint', () => {
+    const fingerprint = btoa([event.method, event.pathname].join('|'))
+    expect(event.fingerprint()).toBe(fingerprint)
+    expect(event.getRouteResolver()).toBeInstanceOf(Function)
   })
 
   describe('get', () => {

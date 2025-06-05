@@ -31,6 +31,14 @@ export class Cookie {
   }
 
   /**
+   * Get the cookie value.
+   * @returns The cookie value.
+   */
+  getValue<ValueType = unknown>(): ValueType {
+    return this.value as ValueType
+  }
+
+  /**
    * Set expiration date for the cookie.
    * @param value - Expiration date.
    */

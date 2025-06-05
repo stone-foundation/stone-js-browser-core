@@ -1,7 +1,7 @@
-import { Cookie } from '../cookies/Cookie'
-import { HttpMethod, IRoute } from '../declarations'
-import { BrowserError } from '../errors/BrowserError'
-import { CookieCollection } from '../cookies/CookieCollection'
+import { Cookie } from './cookies/Cookie'
+import { HttpMethod, IRoute } from './declarations'
+import { BrowserError } from './errors/BrowserError'
+import { CookieCollection } from './cookies/CookieCollection'
 import { IncomingEvent, IncomingEventOptions } from '@stone-js/core'
 
 /**
@@ -134,6 +134,11 @@ export class IncomingBrowserEvent extends IncomingEvent {
   /** @returns Whether the request was made over a secure connection. */
   get isSecure (): boolean {
     return this.protocol === 'https'
+  }
+
+  /** @returns The user agent of the request. */
+  get userAgent (): string | undefined {
+    return window.navigator.userAgent
   }
 
   /**
@@ -294,7 +299,7 @@ export class IncomingBrowserEvent extends IncomingEvent {
    * @param resolver - The route resolver function.
    * @returns The current instance for method chaining.
    */
-  setRouteResolver (resolver: () => IRoute): this {
+  setRouteResolver<RouteType extends IRoute = IRoute>(resolver: () => RouteType): this {
     this.routeResolver = resolver
     return this
   }
@@ -304,8 +309,8 @@ export class IncomingBrowserEvent extends IncomingEvent {
    *
    * @returns The route parameter or the route object.
    */
-  getRoute (): IRoute | undefined {
-    return this.routeResolver?.()
+  getRoute<RouteType extends IRoute = IRoute>(): RouteType | undefined {
+    return this.routeResolver?.() as (RouteType | undefined)
   }
 
   /**
@@ -344,6 +349,15 @@ export class IncomingBrowserEvent extends IncomingEvent {
    */
   isMethod (method: string): boolean {
     return this.method.toUpperCase() === method.toUpperCase()
+  }
+
+  /**
+   * Generate a unique fingerprint for the event.
+   *
+   * @returns The generated fingerprint as a base64 string.
+   */
+  fingerprint (): string {
+    return btoa([this.method, this.pathname].join('|'))
   }
 
   /**

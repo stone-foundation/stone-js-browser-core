@@ -20,6 +20,8 @@ describe('CookieCollection', () => {
     collection.add('newCookie', 'newValue')
     expect(collection.has('newCookie')).toBe(true)
     expect(mockDocument.cookie).toContain('newCookie=newValue')
+    expect(collection.getValue<string>('newCookie')).toBe('newValue')
+    expect(collection.getValue<string>('newCookie2', 'default')).toBe('default')
   })
 
   it('should update an existing cookie in the collection', () => {

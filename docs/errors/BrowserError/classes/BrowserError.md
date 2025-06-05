@@ -1,12 +1,12 @@
-[**Browser Core Documentation v0.0.2**](../../../README.md)
+[**Browser Core Documentation**](../../../README.md)
 
 ***
 
-[Browser Core Documentation](../../../modules.md) / [errors/BrowserError](../README.md) / BrowserError
+[Browser Core Documentation](../../../README.md) / [errors/BrowserError](../README.md) / BrowserError
 
 # Class: BrowserError
 
-Defined in: [errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/errors/BrowserError.ts#L6)
+Defined in: [errors/BrowserError.ts:6](https://github.com/stonemjs/browser-core/blob/361f0c0c27ded9b8e26c081642a73881c7a22507/src/errors/BrowserError.ts#L6)
 
 Custom error for Browser operations.
 
@@ -16,11 +16,11 @@ Custom error for Browser operations.
 
 ## Constructors
 
-### new BrowserError()
+### Constructor
 
-> **new BrowserError**(`message`, `options`?): [`BrowserError`](BrowserError.md)
+> **new BrowserError**(`message`, `options?`): `BrowserError`
 
-Defined in: [errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/2c2c45da7146109ea5ae39ff81ac0b60630dfeee/src/errors/BrowserError.ts#L7)
+Defined in: [errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/blob/361f0c0c27ded9b8e26c081642a73881c7a22507/src/errors/BrowserError.ts#L7)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [errors/BrowserError.ts:7](https://github.com/stonemjs/browser-core/
 
 #### Returns
 
-[`BrowserError`](BrowserError.md)
+`BrowserError`
 
 #### Overrides
 

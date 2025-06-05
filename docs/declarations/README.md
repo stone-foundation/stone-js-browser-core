@@ -1,8 +1,8 @@
-[**Browser Core Documentation v0.0.2**](../README.md)
+[**Browser Core Documentation**](../README.md)
 
 ***
 
-[Browser Core Documentation](../modules.md) / declarations
+[Browser Core Documentation](../README.md) / declarations
 
 # declarations
 

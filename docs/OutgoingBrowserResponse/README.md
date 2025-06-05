@@ -1,10 +1,10 @@
-[**Browser Core Documentation v0.0.2**](../../README.md)
+[**Browser Core Documentation**](../README.md)
 
 ***
 
-[Browser Core Documentation](../../modules.md) / events/OutgoingBrowserResponse
+[Browser Core Documentation](../README.md) / OutgoingBrowserResponse
 
-# events/OutgoingBrowserResponse
+# OutgoingBrowserResponse
 
 ## Classes
 
