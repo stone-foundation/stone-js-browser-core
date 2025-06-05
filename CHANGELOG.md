@@ -12,6 +12,19 @@ All notable changes to the "Stone.js Browser core" extension will be documented 
 
 * major internal restructuring and cleanup ([#43](https://github.com/stonemjs/browser-core/issues/43)) ([cb27be0](https://github.com/stonemjs/browser-core/commit/cb27be08d105f8175759c59f313cfe1000c4a6a1))
 
+This release introduces a comprehensive internal refactoring of the `browser-core` module to align with the evolving architecture of Stone.js and ensure smooth runtime continuity between server and browser environments.
+
+#### Changes included:
+
+* Restructured the module around `IncomingBrowserEvent`, `OutgoingBrowserResponse`, and `RedirectBrowserResponse` to better reflect navigation-based runtime behavior
+* Refined the `CookieCollection` API for consistent cookie handling across browser and HTTP contexts
+* Improved typings for stronger type safety and better developer experience
+* Added new runtime features to enhance browser response capabilities
+* Fixed minor issues and streamlined internal logic
+* Expanded unit test coverage for increased reliability
+
+This cleanup prepares the module for SPA and SSR integration within the Continuum Architecture and brings it in line with the internal standards applied across all Stone.js core packages.
+
 ## [0.0.3](https://github.com/stonemjs/browser-core/compare/v0.0.2...v0.0.3) (2025-01-21)
 
 
