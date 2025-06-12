@@ -4,33 +4,33 @@ import { RedirectBrowserResponse } from '../src/RedirectBrowserResponse'
 describe('RedirectBrowserResponse', () => {
   it('should create an instance using static create()', () => {
     const response = RedirectBrowserResponse.create({
-      url: 'https://stonejs.com',
+      url: 'https://stonejs.dev',
       statusCode: 302,
       content: ''
     })
     expect(response).toBeInstanceOf(RedirectBrowserResponse)
     expect(response.statusCode).toBe(302)
-    expect(response.targetUrl).toBe('https://stonejs.com')
+    expect(response.targetUrl).toBe('https://stonejs.dev')
   })
 
   it('should extract targetUrl from content.redirect if url is missing', () => {
     const response = new RedirectBrowserResponse({
-      content: { redirect: 'https://stonejs.com' },
+      content: { redirect: 'https://stonejs.dev' },
       statusCode: 302,
       // @ts-expect-error: url is empty
       url: undefined // fallback to avoid isEmpty
     })
-    expect(response.targetUrl).toBe('https://stonejs.com')
+    expect(response.targetUrl).toBe('https://stonejs.dev')
   })
 
   it('should extract targetUrl from content if url is missing', () => {
     const response = new RedirectBrowserResponse({
-      content: 'https://stonejs.com',
+      content: 'https://stonejs.dev',
       statusCode: 302,
       // @ts-expect-error: url is empty
       url: undefined // fallback value to skip `isEmpty` check
     })
-    expect(response.targetUrl).toBe('https://stonejs.com')
+    expect(response.targetUrl).toBe('https://stonejs.dev')
   })
 
   it('should throw BrowserError url is empty', () => {
