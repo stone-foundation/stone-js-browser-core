@@ -5,6 +5,13 @@ All notable changes to the "Stone.js Browser core" extension will be documented 
 ## Unreleased
 
 
+## [0.1.1](https://github.com/stone-foundation/stone-js-browser-core/compare/v0.1.0...v0.1.1) (2025-06-12)
+
+
+### Miscellaneous Chores
+
+* migrate to stone-foundation, integrate sonar cloud and add security policy ([#53](https://github.com/stone-foundation/stone-js-browser-core/issues/53)) ([d969e21](https://github.com/stone-foundation/stone-js-browser-core/commit/d969e213200093ce407bb73c4509a4759b2be345))
+
 ## [0.1.0](https://github.com/stone-foundation/stone-js-browser-core/compare/v0.0.3...v0.1.0) (2025-06-05)
 
 
