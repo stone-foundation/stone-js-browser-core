@@ -4,10 +4,10 @@ Represents a route.
 
 ## Properties
 
-### getParam()
+### getParam
 
 ```ts
-getParam: <TReturn>(name, fallback?) => undefined | TReturn;
+getParam: <TReturn>(name, fallback?) => TReturn | undefined;
 ```
 
 #### Type Parameters
@@ -28,7 +28,7 @@ getParam: <TReturn>(name, fallback?) => undefined | TReturn;
 
 #### Returns
 
-`undefined` \| `TReturn`
+`TReturn` \| `undefined`
 
 ***
 

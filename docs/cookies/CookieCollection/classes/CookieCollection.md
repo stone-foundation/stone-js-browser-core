@@ -45,7 +45,7 @@ Cookies options.
 add(
    name, 
    value, 
-   options): this;
+   options?): this;
 ```
 
 Add a cookie to the collection.
@@ -64,7 +64,7 @@ Cookie name.
 
 Cookie value.
 
-##### options
+##### options?
 
 [`CookieOptions`](../../../declarations/interfaces/CookieOptions.md) = `{}`
 
@@ -110,16 +110,20 @@ Get a cookie from the collection.
 
 #### Param
 
+**name**
+
 Cookie name.
 
 #### Param
+
+**fallback**
 
 Fallback value if the cookie does not exist.
 
 #### Call Signature
 
 ```ts
-get(name): undefined | Cookie;
+get(name): Cookie | undefined;
 ```
 
 Get a cookie from the collection.
@@ -134,17 +138,9 @@ Cookie name.
 
 ##### Returns
 
-`undefined` \| [`Cookie`](../../Cookie/classes/Cookie.md)
+[`Cookie`](../../Cookie/classes/Cookie.md) \| `undefined`
 
 Cookie value.
-
-##### Param
-
-Cookie name.
-
-##### Param
-
-Fallback value if the cookie does not exist.
 
 #### Call Signature
 
@@ -174,14 +170,6 @@ Fallback value if the cookie does not exist.
 
 Cookie value.
 
-##### Param
-
-Cookie name.
-
-##### Param
-
-Fallback value if the cookie does not exist.
-
 ***
 
 ### getValue()
@@ -190,16 +178,20 @@ Get a cookie value from the collection.
 
 #### Param
 
+**name**
+
 Cookie name.
 
 #### Param
+
+**fallback**
 
 Fallback value if the cookie does not exist.
 
 #### Call Signature
 
 ```ts
-getValue<ValueType>(name): undefined | ValueType;
+getValue<ValueType>(name): ValueType | undefined;
 ```
 
 Get a cookie value from the collection.
@@ -220,17 +212,9 @@ Cookie name.
 
 ##### Returns
 
-`undefined` \| `ValueType`
+`ValueType` \| `undefined`
 
 Cookie value.
-
-##### Param
-
-Cookie name.
-
-##### Param
-
-Fallback value if the cookie does not exist.
 
 #### Call Signature
 
@@ -265,14 +249,6 @@ Fallback value if the cookie does not exist.
 `ValueType`
 
 Cookie value.
-
-##### Param
-
-Cookie name.
-
-##### Param
-
-Fallback value if the cookie does not exist.
 
 ***
 
@@ -315,7 +291,7 @@ Check if the collection is empty.
 ### remove()
 
 ```ts
-remove(name, options): this;
+remove(name, options?): this;
 ```
 
 Remove a cookie from the collection.
@@ -328,7 +304,7 @@ Remove a cookie from the collection.
 
 Cookie name to remove.
 
-##### options
+##### options?
 
 [`CookieOptions`](../../../declarations/interfaces/CookieOptions.md) = `{}`
 
@@ -343,14 +319,14 @@ Cookie options.
 ### secure()
 
 ```ts
-secure(value): this;
+secure(value?): this;
 ```
 
 Set secure flag for all cookies in the collection.
 
 #### Parameters
 
-##### value
+##### value?
 
 `boolean` = `false`
 
@@ -390,7 +366,7 @@ Cookie options.
 update(
    name, 
    value, 
-   options): this;
+   options?): this;
 ```
 
 Update a cookie in the collection.
@@ -409,7 +385,7 @@ Cookie name.
 
 New cookie value.
 
-##### options
+##### options?
 
 [`CookieOptions`](../../../declarations/interfaces/CookieOptions.md) = `{}`
 

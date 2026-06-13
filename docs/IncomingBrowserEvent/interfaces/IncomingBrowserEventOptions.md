@@ -17,7 +17,7 @@ IncomingBrowserEventOptions interface.
 ### cookies?
 
 ```ts
-optional cookies: CookieCollection;
+optional cookies?: CookieCollection;
 ```
 
 ***
@@ -25,7 +25,7 @@ optional cookies: CookieCollection;
 ### protocol?
 
 ```ts
-optional protocol: string;
+optional protocol?: string;
 ```
 
 ***
@@ -33,7 +33,7 @@ optional protocol: string;
 ### queryString?
 
 ```ts
-optional queryString: string;
+optional queryString?: string;
 ```
 
 ***

@@ -260,7 +260,7 @@ export class IncomingBrowserEvent extends IncomingEvent {
    *
    * @returns The user object, resolved through a user resolver function if available.
    */
-  getUser<T>(): T | undefined {
+  getUser<T = undefined>(): T {
     return this.userResolver?.() as T
   }
 
