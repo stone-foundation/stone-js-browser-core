@@ -87,17 +87,17 @@ The query parameters of the request.
 ### queryString?
 
 ```ts
-readonly optional queryString: string;
+readonly optional queryString?: string;
 ```
 
 The query string of the request.
 
 ***
 
-### routeResolver()?
+### routeResolver?
 
 ```ts
-protected optional routeResolver: () => IRoute;
+protected optional routeResolver?: () => IRoute;
 ```
 
 #### Returns
@@ -116,10 +116,10 @@ The URL of the request.
 
 ***
 
-### userResolver()?
+### userResolver?
 
 ```ts
-protected optional userResolver: () => unknown;
+protected optional userResolver?: () => unknown;
 ```
 
 #### Returns
@@ -141,12 +141,12 @@ static INCOMING_BROWSER_EVENT: string = 'stonejs@incoming_browser_event';
 #### Get Signature
 
 ```ts
-get decodedPathname(): undefined | string;
+get decodedPathname(): string | undefined;
 ```
 
 ##### Returns
 
-`undefined` \| `string`
+`string` \| `undefined`
 
 The decoded pathname of the URL.
 
@@ -221,12 +221,12 @@ Whether the request was made over a secure connection.
 #### Get Signature
 
 ```ts
-get params(): undefined | Record<string, unknown>;
+get params(): Record<string, unknown> | undefined;
 ```
 
 ##### Returns
 
-`undefined` \| `Record`\<`string`, `unknown`\>
+`Record`\<`string`, `unknown`\> \| `undefined`
 
 The route parameters.
 
@@ -317,12 +317,12 @@ The full URL as a string.
 #### Get Signature
 
 ```ts
-get userAgent(): undefined | string;
+get userAgent(): string | undefined;
 ```
 
 ##### Returns
 
-`undefined` \| `string`
+`string` \| `undefined`
 
 The user agent of the request.
 
@@ -357,16 +357,20 @@ Priority:
 
 #### Param
 
+**key**
+
 The key to look for.
 
 #### Param
+
+**fallback**
 
 A fallback value if the key is not found.
 
 #### Call Signature
 
 ```ts
-get<TReturn>(key): undefined | TReturn;
+get<TReturn>(key): TReturn | undefined;
 ```
 
 Get data from the request.
@@ -394,17 +398,9 @@ The key to look for.
 
 ##### Returns
 
-`undefined` \| `TReturn`
+`TReturn` \| `undefined`
 
 The value of the key or the fallback.
-
-##### Param
-
-The key to look for.
-
-##### Param
-
-A fallback value if the key is not found.
 
 ##### Overrides
 
@@ -453,14 +449,6 @@ A fallback value if the key is not found.
 
 The value of the key or the fallback.
 
-##### Param
-
-The key to look for.
-
-##### Param
-
-A fallback value if the key is not found.
-
 ##### Overrides
 
 ```ts
@@ -475,16 +463,20 @@ Get a cookie value.
 
 #### Param
 
+**name**
+
 The cookie name.
 
 #### Param
+
+**fallback**
 
 A fallback value if the cookie is not found.
 
 #### Call Signature
 
 ```ts
-getCookie<TReturn>(name): undefined | TReturn;
+getCookie<TReturn>(name): TReturn | undefined;
 ```
 
 Get a cookie value.
@@ -505,17 +497,9 @@ The cookie name.
 
 ##### Returns
 
-`undefined` \| `TReturn`
+`TReturn` \| `undefined`
 
 The cookie value or the fallback.
-
-##### Param
-
-The cookie name.
-
-##### Param
-
-A fallback value if the cookie is not found.
 
 #### Call Signature
 
@@ -551,14 +535,6 @@ A fallback value if the cookie is not found.
 
 The cookie value or the fallback.
 
-##### Param
-
-The cookie name.
-
-##### Param
-
-A fallback value if the cookie is not found.
-
 ***
 
 ### getParam()
@@ -567,16 +543,20 @@ Retrieve a parameter from the route if it exists.
 
 #### Param
 
+**name**
+
 The name of the parameter to retrieve.
 
 #### Param
+
+**fallback**
 
 The fallback value if the parameter does not exist.
 
 #### Call Signature
 
 ```ts
-getParam<TReturn>(name): undefined | TReturn;
+getParam<TReturn>(name): TReturn | undefined;
 ```
 
 Retrieve a parameter from the route if it exists.
@@ -597,17 +577,9 @@ The name of the parameter to retrieve.
 
 ##### Returns
 
-`undefined` \| `TReturn`
+`TReturn` \| `undefined`
 
 The value of the parameter if it exists, otherwise undefined.
-
-##### Param
-
-The name of the parameter to retrieve.
-
-##### Param
-
-The fallback value if the parameter does not exist.
 
 #### Call Signature
 
@@ -643,20 +615,12 @@ The fallback value if the parameter does not exist.
 
 The value of the parameter if it exists, otherwise undefined.
 
-##### Param
-
-The name of the parameter to retrieve.
-
-##### Param
-
-The fallback value if the parameter does not exist.
-
 ***
 
 ### getRoute()
 
 ```ts
-getRoute<RouteType>(): undefined | RouteType;
+getRoute<RouteType>(): RouteType | undefined;
 ```
 
 Return the current route or a route parameter.
@@ -669,7 +633,7 @@ Return the current route or a route parameter.
 
 #### Returns
 
-`undefined` \| `RouteType`
+`RouteType` \| `undefined`
 
 The route parameter or the route object.
 
@@ -678,7 +642,7 @@ The route parameter or the route object.
 ### getRouteResolver()
 
 ```ts
-getRouteResolver(): () => undefined | IRoute;
+getRouteResolver(): () => IRoute | undefined;
 ```
 
 Get the route resolver function.
@@ -687,27 +651,21 @@ Get the route resolver function.
 
 The route resolver function.
 
-```ts
-(): undefined | IRoute;
-```
-
-##### Returns
-
-`undefined` \| [`IRoute`](../../declarations/interfaces/IRoute.md)
+() => [`IRoute`](../../declarations/interfaces/IRoute.md) \| `undefined`
 
 ***
 
 ### getUri()
 
 ```ts
-getUri(withDomain): undefined | string;
+getUri(withDomain?): string | undefined;
 ```
 
 Get the URI with or without the domain.
 
 #### Parameters
 
-##### withDomain
+##### withDomain?
 
 `boolean` = `false`
 
@@ -715,7 +673,7 @@ Whether to include the domain in the URI.
 
 #### Returns
 
-`undefined` \| `string`
+`string` \| `undefined`
 
 The URI with or without the domain.
 
@@ -724,7 +682,7 @@ The URI with or without the domain.
 ### getUser()
 
 ```ts
-getUser<T>(): undefined | T;
+getUser<T>(): T;
 ```
 
 Get the user instance.
@@ -733,11 +691,11 @@ Get the user instance.
 
 ##### T
 
-`T`
+`T` = `undefined`
 
 #### Returns
 
-`undefined` \| `T`
+`T`
 
 The user object, resolved through a user resolver function if available.
 
@@ -755,13 +713,7 @@ Get the user resolver function.
 
 The user resolver function.
 
-```ts
-(): unknown;
-```
-
-##### Returns
-
-`unknown`
+() => `unknown`
 
 ***
 

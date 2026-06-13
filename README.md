@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/l/@stone-js/browser-core)](https://opensource.org/licenses/MIT)
 [![npm](https://img.shields.io/npm/v/@stone-js/browser-core)](https://www.npmjs.com/package/@stone-js/browser-core)
 [![npm](https://img.shields.io/npm/dm/@stone-js/browser-core)](https://www.npmjs.com/package/@stone-js/browser-core)
-![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![Maintenance](https://img.shields.io/maintenance/yes/2026)
 [![Build Status](https://github.com/stone-foundation/stone-js-browser-core/actions/workflows/main.yml/badge.svg)](https://github.com/stone-foundation/stone-js-browser-core/actions/workflows/main.yml)
 [![Publish Package to npmjs](https://github.com/stone-foundation/stone-js-browser-core/actions/workflows/release.yml/badge.svg)](https://github.com/stone-foundation/stone-js-browser-core/actions/workflows/release.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=stone-foundation_stone-js-browser-core&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=stone-foundation_stone-js-browser-core)
@@ -40,7 +40,7 @@ This module enables **context-aware event and response handling** in the browser
 npm install @stone-js/browser-core
 ```
 
-> \[!IMPORTANT]
+> [!IMPORTANT]
 > This package is **pure ESM**. Ensure your `package.json` includes `"type": "module"` or configure your bundler appropriately.
 
 ## Usage Example
@@ -59,7 +59,7 @@ const response = RedirectBrowserResponse.to('/dashboard')
 
 This package is part of the Stone.js ecosystem, a modern JavaScript framework built around the Continuum Architecture.
 
-Explore the full documentation: https://stonejs.dev
+Explore the full documentation: [https://stonejs.dev](https://stonejs.dev)
 
 ## API documentation
 

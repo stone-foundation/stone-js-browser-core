@@ -45,7 +45,7 @@ HttpError if the status code is not a redirect code.
 ### targetUrl?
 
 ```ts
-readonly optional targetUrl: string | URL;
+readonly optional targetUrl?: string | URL;
 ```
 
 ***
@@ -367,7 +367,7 @@ A new instance of RedirectBrowserResponse.
 ### to()
 
 ```ts
-static to(url, statusCode): RedirectBrowserResponse;
+static to(url, statusCode?): RedirectBrowserResponse;
 ```
 
 Create an instance of RedirectBrowserResponse from the given path or URL.
@@ -376,11 +376,11 @@ Create an instance of RedirectBrowserResponse from the given path or URL.
 
 ##### url
 
+`string` \| `URL`
+
 The path or URL to redirect to. If a string is provided, it will be treated as a relative path.
 
-`string` | `URL`
-
-##### statusCode
+##### statusCode?
 
 `number` = `302`
 
