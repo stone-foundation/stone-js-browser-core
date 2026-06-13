@@ -5,6 +5,13 @@ All notable changes to the "Stone.js Browser core" extension will be documented 
 ## Unreleased
 
 
+## [0.1.2](https://github.com/stone-foundation/stone-js-browser-core/compare/v0.1.1...v0.1.2) (2026-06-13)
+
+
+### Miscellaneous Chores
+
+* update Stone.js core deps ([#65](https://github.com/stone-foundation/stone-js-browser-core/issues/65)) ([25b0b6d](https://github.com/stone-foundation/stone-js-browser-core/commit/25b0b6dd2105385009fae7abc9e865dbf551ef29))
+
 ## [0.1.1](https://github.com/stone-foundation/stone-js-browser-core/compare/v0.1.0...v0.1.1) (2025-06-12)
 
 
